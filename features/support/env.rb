@@ -26,10 +26,10 @@ end
 
 Before do |scenario|
     @app = app
-    if @app["LARQ_BROWSER"] == "firefox"
-      @browser = maximize_browser_window(Watir::Browser.new(:firefox, profile: "default", headless: @app["LARQ_HEADLESS"]))
-    elsif @app["LARQ_BROWSER"] == "chrome"
-      @browser = maximize_browser_window(Watir::Browser.new(:chrome, headless: @app["LARQ_HEADLESS"]))
+    if @app["BROWSER"] == "firefox"
+      @browser = maximize_browser_window(Watir::Browser.new(:firefox, profile: "default", headless: @app["HEADLESS"]))
+    elsif @app["BROWSER"] == "chrome"
+      @browser = maximize_browser_window(Watir::Browser.new(:chrome, headless: @app["HEADLESS"]))
     end
 end
   
