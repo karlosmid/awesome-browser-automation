@@ -3,5 +3,7 @@ class CartPage
     
     page_url "<%=params[:base_url]%>"
 
-    p(:item_name, :xpath => '//*[@id="root"]/div/div[2]/div[2]/div/div[3]/p[1]')
+    def check name
+      element("p", {:class => 'title', :text => name}).when_visible.text
+    end
 end

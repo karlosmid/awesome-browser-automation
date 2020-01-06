@@ -1,5 +1,5 @@
-Then /^cart has Dark Thug Blue-Navy T-Shirt$/ do
+Then /^cart has (.*)$/ do |name|
   on CartPage do |page|
-    expect(page.item_name).to eq "Dark Thug Blue-Navy T-Shirt"
+    expect(page.check(name)).to eq name
   end
 end
