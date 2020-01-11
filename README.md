@@ -12,17 +12,13 @@ Browser automation using awesome Ruby games
 `bundle install`  
 `bundle update`  
 
-# Configuration
+# ENV variables
 
-In config/application.yml  
-```
-SITE: https://livelarq.com
-HEADLESS: true
-BROWSER: chrome
-```
-
-You must set site root url, you can choose browser headless mode with true/false,  
-and you can run chrome or firefox  
+Copy .env_template to .env  
+In .env put your values for Browserstack key and username.  
+run `source .env`
 
 # Blog
+
+https://blog.tentamen.eu/?post_type=post&s=awesome+browser+automation+-+Chapter
 

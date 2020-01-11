@@ -1,3 +1,8 @@
 SITE: https://react-shopping-cart-67954.firebaseapp.com/
 HEADLESS: false
-BROWSER: chrome
+BROWSER: browserstack 
+BROWSERSTACK_BROWSER: Chrome
+BROWSERSTACK_BROWSER_VERSION: '79.0 beta'
+BROWSERSTACK_OS: 'OS X'
+BROWSERSTACK_OS_VERSION: 'High Sierra'
+BROWSERSTACK_RESOLUTION: '1280x1024'
